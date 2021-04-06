@@ -1,0 +1,18 @@
+.Home {
+    background-color: var(--dark-grey);
+    height: 100vh;
+    color: white;
+    padding-top: 90px;
+}
+
+.headerOverlay {
+    width: 400px;
+    height: 200px;
+    background-color: black;
+    margin: auto;
+    padding: 20px;
+    border-radius: 2em;
+    opacity: 0.8;
+
+    font-family: Archivo Black;
+}

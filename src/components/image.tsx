@@ -17,9 +17,9 @@ import { ImageQuery } from "../../graphql-types"
 const Image: React.FC = () => {
   const data = useStaticQuery<ImageQuery>(graphql`
     query Image {
-      placeholderImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
+      placeholderImage: file(relativePath: { eq: "omakuva.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
+          fluid(maxWidth: 600) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -36,7 +36,9 @@ const Image: React.FC = () => {
    * See if PR https://github.com/gatsbyjs/gatsby/pull/17065 has been merged
    */
   return imageFluid != null ? (
-    <GatsbyImage fluid={imageFluid as FluidObject} />
+    <GatsbyImage
+      fluid={imageFluid as FluidObject} 
+    />
   ) : null
 }
 export default Image
