@@ -22,7 +22,7 @@
 }
 
 .footer > div > img {
-    height:  70vh;
+    height:  500px;
     width:  auto;
     margin: 20px;
 }
@@ -45,13 +45,21 @@
     margin-right: 30px;
 }
 
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 1000px){
+    .footer > div {
+        flex-direction: column;
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 500px){
     .footer > div {
         flex-direction: column;
         width: 90%;
     }
 
     .footer > div > img {
-        height: 70vh;
+        height: auto;
+        width: 200px;
     }
 }
