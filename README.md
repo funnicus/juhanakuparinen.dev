@@ -5,6 +5,8 @@ I plan to add Contentful headless CMS and a blog system powered with it to this 
 
 Deployed using Netlify at ***nimipalvelinPäivittynyt ? www.juhanakuparinen.dev : jovial-darwin-243abd.netlify.app***
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/73252c8f-5102-40a6-8606-611aa06f3269/deploy-status)](https://app.netlify.com/sites/jovial-darwin-243abd/deploys)
+
 ## Developing this site
 
 You need gatsby-cli and node.js
