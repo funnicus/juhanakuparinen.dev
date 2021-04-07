@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 
 const IndexPage: React.FC = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Home" description="Juhana Kuparinen | IT Student and Webmaster at Digit ry" />
     <div className={homeStyles.Home}>
       <div className={homeStyles.headerOverlay}>
         <hgroup style={{ fontSize: "1.4em", padding: "30px", marginTop: "10vh" }}>

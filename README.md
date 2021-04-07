@@ -3,6 +3,8 @@
 This is the code for my developer website. It has been build using Gatsby.
 I plan to add Contentful headless CMS and a blog system powered with it to this site in the future...
 
+Deployed using Netlify at ***nimipalvelinPäivittynyt ? www.juhanakuparinen.dev : jovial-darwin-243abd.netlify.app***
+
 ## Developing this site
 
 You need gatsby-cli and node.js

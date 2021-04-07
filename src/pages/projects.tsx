@@ -7,7 +7,7 @@ import * as projectsStyles from '../styles/projects.module.css'
 const Projects: React.FC = () => {
     return(
         <Layout>
-            <SEO title="Projects" description="..." />
+            <SEO title="Projects" description="Software projects by Juhana Kuparinen" />
             <div className={projectsStyles.Projects}>
                 <div className={projectsStyles.projects} >
                     <article>

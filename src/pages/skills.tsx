@@ -7,7 +7,7 @@ import * as skillsStyles from '../styles/skills.module.css'
 
 const Skills: React.FC = () => (
         <Layout>
-            <SEO title="Skills" description="..." />
+            <SEO title="Skills" description="Software and coding skills of Juhana Kuparinen" />
             <div className={skillsStyles.Skills}>
                 <Tiles />
                 <div className={skillsStyles.description}>
