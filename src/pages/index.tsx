@@ -10,7 +10,7 @@ const IndexPage: React.FC = () => (
       <div className={homeStyles.headerOverlay}>
         <hgroup style={{ fontSize: "1.4em", padding: "30px", marginTop: "10vh" }}>
           <h1>Juhana Kuparinen</h1>
-          <h4>IT student and Webmaster <br/> @ <a href="www.digit.fi">Digit ry</a></h4>
+          <h4>IT student and Webmaster <br/> @ <a href="https://www.digit.fi">Digit ry</a></h4>
         </hgroup>
         <p style={{ fontSize: "0.9em", padding: "40px" }}>
           I build websites powered by React and Node.js. 
