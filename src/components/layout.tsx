@@ -8,6 +8,7 @@
 import { graphql, useStaticQuery } from "gatsby"
 import React, { ReactNode } from "react"
 import Header from "./header"
+import Navbar from './navbar'
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import pic from "../images/omakuva.jpg" // Tell webpack this JS file uses this image
@@ -40,6 +41,7 @@ const Layout: React.FC<Props> = ({ children }) => {
     <>
       <Header siteTitle={title} />
       <div className={layoutStyles.layout}>
+        <Navbar />
         <main>{children}</main>
         <footer className={layoutStyles.footer}>
           <div>
@@ -50,23 +52,21 @@ const Layout: React.FC<Props> = ({ children }) => {
                 but I was born and
                 raised in Helsinki.
                 I'm interested in all things coding, but recently my
-                focus has been on fullstack web development with React, Node.js, TypeScript and GraphQL.
-                Currently I'm volunteering at Digit ry as a Webmaster!
-              </p>
-              <p>
-                I can program with Java, JavaScript, TypeScript and Python. I can also use React (CRA, Next, Gatsby), GraphQL, Node in the backend and know
-                my way around git
-                relatively well.
-                I have some projects to showcase my web development skills at my <a href="https://github.com/funnicus"><b>GitHub
-                    page</b></a>.
+                focus has been on fullstack web development with <b>React</b>, <b>Node.js</b>, <b>TypeScript</b> and <b>GraphQL</b>.
+                Currently, I'm volunteering at my university student association, Digit ry, as a Webmaster!
               </p>
               <p>
                 I have a trackrecord of working well with other people. I have been a Verso-mediator at my
                 old school, and I worked as one of the Materials Engineering tutors at University of
-                Turku this year.
+                Turku in the fall of 2020. You may be seeing me tutoring again next fall...
               </p>
               <p>
-                As for hobbies, I like to motorcycle, play video games, run/workout and make tasty pizzas.
+                On my free time, I like to motorcycle, play video games, run/workout and make tasty pizzas.
+                I also listen music alot, mainly electronic and ambient. My favorites are <b>Boards of Canada</b>, <b>Urlich Schnauss</b> and especially the
+                album <b>Moon Safari</b> from <b>Air</b>.
+              </p>
+              <p>
+                
               </p>
             </article>
             <img
@@ -83,7 +83,7 @@ const Layout: React.FC<Props> = ({ children }) => {
               </ul>
             </article>
           </div>
-          <span>
+            <span>
               Juhana Kuparinen © {new Date().getFullYear()}, Built with
               {` `}
               <a href="https://www.gatsbyjs.org">Gatsby</a>

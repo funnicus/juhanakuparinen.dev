@@ -32,7 +32,7 @@
 }
 
 .headerOverlay p {
-         animation-delay: 1s;
+        animation-delay: 1s;
 }
 
 @keyframes fadeIn {

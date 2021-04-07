@@ -10,13 +10,13 @@ const IndexPage: React.FC = () => (
     <SEO title="Home" />
     <div className={homeStyles.Home}>
       <div className={homeStyles.headerOverlay}>
-        <hgroup style={{ fontSize: "1.4em", padding: "30px" }}>
+        <hgroup style={{ fontSize: "1.4em", padding: "30px", marginTop: "10vh" }}>
           <h1>Juhana Kuparinen</h1>
           <h4>IT student and Webmaster <br/> @ <a href="www.digit.fi">Digit ry</a></h4>
         </hgroup>
-        <p style={{ fontSize: "0.9em", marginTop: "10%", padding: "40px" }}>
+        <p style={{ fontSize: "0.9em", padding: "40px" }}>
           I build websites powered by React and Node.js. 
-          Recently I have also picked up interest in Rust and lower level programming!
+          Recently I have also picked up interest in Rust 🦀 and lower level programming!
         </p>
       </div>
     </div>
