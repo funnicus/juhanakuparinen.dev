@@ -1,0 +1,58 @@
+.Projects {
+    height: 100vh;
+    background-color: var(--dark-grey);
+	background-image: url("../images/moto.jpg");
+	background-size: cover;
+}
+
+.projects {
+    color: white;
+    background-color: rgba(0,0,0, .8);
+    padding: 20px;
+    padding-top: 10vh;
+
+    font-size: .8em;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    height: 100vh;
+}
+
+.projects article {
+    padding: 30px;
+    width: 30%;
+    animation: fadeIn .8s ease-in both;
+}
+
+.projects a {
+    color: orange;
+    text-decoration: none;
+}
+
+@keyframes fadeIn {
+    from {
+		opacity: 0;
+		transform: translate3d(0, -20%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+} 
+
+@media only screen and (max-width: 850px){
+    .Projects {
+        height: fit-content;
+    }
+
+    .projects {
+        flex-direction: row;
+        height: fit-content;
+    }
+
+    .projects article {
+        width: initial;
+    }
+}

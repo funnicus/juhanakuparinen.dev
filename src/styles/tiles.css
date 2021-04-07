@@ -10,19 +10,25 @@
   --graphql: #e10098;
 }
 
+.Tiles {
+  width: 50%;
+  background-color: rgba(0,0,0, .8);
+}
+
 .tiles {
     font-family: sans-serif;
     display: flex;
     flex-direction: column;
     margin: 0;
     padding: 0;
-    transform: scale(0.7);
+    transform: scale(0.7);  
   }
   
   .tiles li {
     list-style: none;
     margin: 40px;
     width: 10%;
+    animation: fadeIn .8s ease-in both; 
   }
   
   .tiles li a .fab {
@@ -31,6 +37,7 @@
     line-height:80px;
     transition: .5s;
     padding-right: 14px;
+    padding-top: 16px;
   }
   
   .tiles li a span {
@@ -52,7 +59,7 @@
     text-align: left;
     padding-left: 20px;
     transform: rotate(0deg);
-    transition:.5s;
+    transition: 0.5s;
     box-shadow: -20px 20px 10px rgba(0,0,0,.5);
   }
   
@@ -87,6 +94,7 @@
   
   .tiles li:nth-child(1) a{
     background: var(--js);
+    width: 410px;
   }
   .tiles li:nth-child(1) a:before{
     background: #af9800;
@@ -97,43 +105,47 @@
   }
   
   .tiles li:nth-child(2) a{
-    background: var(--ts);
+    background: var(--react);
+    width: 400px;
   }
   
   .tiles li:nth-child(2) a:before{
-    background: #27609c;
-  }
-  
-  .tiles li:nth-child(2) a:after{
-    background: var(--ts-side);
-  }
-  
-  .tiles li:nth-child(3) a{
-    background: var(--react);
-  }
-  
-  .tiles li:nth-child(3) a:before{
     background: #4292a8;
   }
   
-  .tiles li:nth-child(3) a:after{
+  .tiles li:nth-child(2) a:after{
     background: var(--react-side);
   }
   
-  .tiles li:nth-child(4) a{
+  .tiles li:nth-child(3) a{
     background: var(--nodejs);
+    width: 390px;
   }
   
-  .tiles li:nth-child(4) a:before{
+  .tiles li:nth-child(3) a:before{
     background: #015000;
   }
   
-  .tiles li:nth-child(4) a:after{
+  .tiles li:nth-child(3) a:after{
     background: var(--nodejs-side);
+  }
+
+  .tiles li:nth-child(4) a{
+    background: var(--ts);
+    width: 350px;
+  }
+  
+  .tiles li:nth-child(4) a:before{
+    background: #27609c;
+  }
+  
+  .tiles li:nth-child(4) a:after{
+    background: var(--ts-side);
   }
 
   .tiles li:nth-child(5) a{
     background: var(--graphql);
+    width: 300px;
   }
   
   .tiles li:nth-child(5) a:before{
@@ -143,3 +155,20 @@
   .tiles li:nth-child(5) a:after{
     background: #e73db1;
   }
+
+  @media only screen and (max-width: 850px){
+    .Tiles {
+      width: initial;
+    }
+}
+
+@keyframes fadeIn {
+  from {
+  opacity: 0;
+  transform: translate3d(0, -20%, 0);
+}
+to {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+} 

@@ -1,6 +1,4 @@
-import { Link } from "gatsby"
-import * as homeStyles from "./home.module.css"
-import Tiles from '../components/tiles'
+import * as homeStyles from "../styles/index.module.css"
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
