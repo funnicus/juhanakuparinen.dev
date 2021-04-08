@@ -1,4 +1,5 @@
 import React from 'react'
+import Carousel from 'react-spring-3d-carousel'
 import Layout from "../components/layout"
 import SEO from '../components/seo'
 

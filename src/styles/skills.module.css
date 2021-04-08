@@ -10,7 +10,7 @@
     background-color: black;
     opacity: 0.8;
     width: 50%;
-    padding: 10vh;
+    padding: 20vh;
     color: white;
 }
 
@@ -83,6 +83,17 @@
 	to {
 		opacity: 1;
 		transform: translate3d(0, 0, 0);
+	}
+}
+
+@media only screen and (max-width: 1250px){
+	.Skills {
+		font-size: .9em;
+	}
+
+	.description {
+		padding: 5vh;
+		padding-top: 20vh;
 	}
 }
 

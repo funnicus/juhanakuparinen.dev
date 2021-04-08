@@ -21,7 +21,8 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0",
-    "react-icons": "^3.11.0"
+    "react-icons": "^3.11.0",
+    "react-spring-3d-carousel": "^1.2.1"
   },
   "devDependencies": {
     "@graphql-codegen/cli": "^1.17.8",
