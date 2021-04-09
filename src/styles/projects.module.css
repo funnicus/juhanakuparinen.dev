@@ -3,27 +3,27 @@
     background-color: var(--dark-grey);
 	background-image: url("../images/moto.jpg");
 	background-size: cover;
+    font-size: 1.5em;
 }
 
 .projects {
     color: white;
     background-color: rgba(0,0,0, .8);
     padding: 20px;
-    padding-top: 10vh;
-
-    font-size: .8em;
-
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-
+    padding-top: 30vh;
     height: 100vh;
 }
 
 .projects article {
-    padding: 30px;
-    width: 30%;
+    width: 100vw;
+    text-align: center;
     animation: fadeIn .8s ease-in both;
+}
+
+.projects p {
+    font-size: 0.9em;
+    width: 50%;
+    margin: auto;
 }
 
 .projects a {
@@ -53,6 +53,11 @@
     }
 
     .projects article {
+        width: 80vw;
+    }
+
+    .projects p {
         width: initial;
+        font-size: 0.6em;
     }
 }
