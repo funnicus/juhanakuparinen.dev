@@ -43,8 +43,8 @@ const Footer = () => {
             <article>
               <h3>Me around the web:</h3>
               <ul>
-                <li><FontAwesomeIcon icon={faGithub} size="2x" /> <a href="https://github.com/funnicus">GitHub</a></li>
-                <li><FontAwesomeIcon icon={faLinkedin} size="2x" /> <a href="https://www.linkedin.com/in/juhana-kuparinen-6284b8198/">LinkedIn</a></li>
+                <li><FontAwesomeIcon className="github" icon={faGithub} size="2x" /> <a href="https://github.com/funnicus">GitHub</a></li>
+                <li><FontAwesomeIcon className={footerStyles.linkedin} icon={faLinkedin} size="2x" /> <a href="https://www.linkedin.com/in/juhana-kuparinen-6284b8198/">LinkedIn</a></li>
               </ul>
             </article>
           </div>

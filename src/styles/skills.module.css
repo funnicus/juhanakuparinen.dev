@@ -90,11 +90,6 @@
 	.Skills {
 		font-size: .9em;
 	}
-
-	.description {
-		padding: 5vh;
-		padding-top: 20vh;
-	}
 }
 
 @media only screen and (max-width: 850px){

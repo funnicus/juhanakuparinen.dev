@@ -1,5 +1,4 @@
 import React from 'react'
-import Flickity from 'react-flickity-component'
 import Layout from "../components/layout"
 import SEO from '../components/seo'
 
@@ -12,7 +11,6 @@ const Projects: React.FC = () => {
             <SEO title="Projects" description="Software projects by Juhana Kuparinen" />
             <div className={projectsStyles.Projects}>
                 <div className={projectsStyles.projects} >
-                    <Flickity static={true}>
                         <article>
                             <header>
                                 <h3><a href="https://github.com/funnicus/helikuparinenhomepage">Heli Kuparinen webpage</a></h3>
@@ -65,7 +63,6 @@ const Projects: React.FC = () => {
                                 A live working version of the game can be found <a href="https://funnicus.github.io/Laivanupotus/">here</a>!
                             </p>
                         </article>
-                    </Flickity>
                 </div>
             </div>
         </Layout>
@@ -73,7 +70,3 @@ const Projects: React.FC = () => {
 }
 
 export default Projects
-
-/*
-
-*/

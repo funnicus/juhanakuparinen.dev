@@ -7,6 +7,7 @@
 .footer > div {
     padding: 20px;
     width: 60%;
+    max-width: 900px;
     margin: auto;
     text-align: left;
     display: flex;
@@ -28,7 +29,7 @@
 
 .footer a {
     text-decoration: none;
-    color: #f4c531;
+    color: #ffe386;
 }
 
 .footer ul {

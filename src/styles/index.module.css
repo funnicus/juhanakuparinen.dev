@@ -1,12 +1,11 @@
 .Home {
-    background-color: var(--dark-grey);
-    background-image: url("../images/moto.jpg");
+    background: var(--dark-grey) url("../images/moto.jpg");
     background-size: cover;
     color: white;
 }
 
 .Home > div {
-    height: 100vh;
+	min-height: 100vh;
     width: 40%;
 }
 
@@ -15,6 +14,10 @@
     padding: 20px;
     opacity: 0.8;
     font-family: Archivo Black;
+}
+
+.headerOverlay > div {
+    max-width: 600px;
 }
 
 .headerOverlay a {

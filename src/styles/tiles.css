@@ -21,7 +21,7 @@
     flex-direction: column;
     margin: 0;
     padding: 0;
-    transform: scale(0.7);  
+    transform: scale(0.6);  
   }
   
   .tiles li {
@@ -159,6 +159,7 @@
   @media only screen and (max-width: 850px){
     .Tiles {
       width: initial;
+      height: 700px;
     }
 }
 

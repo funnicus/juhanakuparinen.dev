@@ -1,29 +1,23 @@
 .Projects {
-    height: 100vh;
+    height: fit-content;
+    min-height: 100%;
     background-color: var(--dark-grey);
 	background-image: url("../images/moto.jpg");
 	background-size: cover;
-    font-size: 1.5em;
+    font-size: 1.1em;
 }
 
 .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    padding: 15vh 10vh;
     color: white;
     background-color: rgba(0,0,0, .8);
-    padding: 20px;
-    padding-top: 30vh;
-    height: 100vh;
 }
 
 .projects article {
-    width: 100vw;
-    text-align: center;
     animation: fadeIn .8s ease-in both;
-}
-
-.projects p {
-    font-size: 0.9em;
-    width: 50%;
-    margin: auto;
+    padding: 0 4vw 0;
 }
 
 .projects a {
@@ -48,16 +42,6 @@
     }
 
     .projects {
-        flex-direction: row;
         height: fit-content;
-    }
-
-    .projects article {
-        width: 80vw;
-    }
-
-    .projects p {
-        width: initial;
-        font-size: 0.6em;
     }
 }

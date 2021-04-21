@@ -5,3 +5,4 @@ graphql-types.d.ts
 package-lock.json
 schema.json
 yarn.lock
+.eslintrc.js
