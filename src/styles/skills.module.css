@@ -1,7 +1,7 @@
 .Skills {
     height: 100vh;
     background-color: var(--dark-grey);
-	background-image: url("../images/moto.jpg");
+	background-image: var(--moto-img);
 	background-size: cover;
     display: flex;
 }

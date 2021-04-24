@@ -1,5 +1,5 @@
 .Home {
-    background: var(--dark-grey) url("../images/moto.jpg");
+    background: var(--dark-grey) var(--moto-img);
     background-size: cover;
     color: white;
 }

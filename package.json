@@ -1,16 +1,15 @@
 {
-  "name": "gatsby-starter-default-typescript",
+  "name": "juhanakuparinen.dev",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Developer and portfolio website of Juhana Kuparinen",
   "version": "0.1.0",
-  "author": "Andy Kenward <hello@andykenward.com>",
+  "author": "Juhana Kuparinen",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "@fortawesome/free-brands-svg-icons": "^5.15.3",
     "@fortawesome/free-regular-svg-icons": "^5.15.3",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "@fortawesome/react-fontawesome": "^0.1.14",
-    "flickity": "^2.2.2",
     "gatsby": "^2.24.63",
     "gatsby-image": "^2.4.19",
     "gatsby-plugin-extract-schema": "^0.0.5",
@@ -21,10 +20,8 @@
     "gatsby-transformer-sharp": "^2.5.15",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-flickity-component": "^3.6.1",
     "react-helmet": "^6.1.0",
-    "react-icons": "^3.11.0",
-    "react-spring-3d-carousel": "^1.2.1"
+    "react-icons": "^3.11.0"
   },
   "devDependencies": {
     "@graphql-codegen/cli": "^1.17.8",
@@ -56,9 +53,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/andykenward/gatsby-starter-default-typescript"
+    "url": "https://github.com/funnicus/juhanakuparinen.dev"
   },
   "bugs": {
-    "url": "https://github.com/andykenward/gatsby-starter-default-typescript/issues"
+    "url": "https://github.com/funnicus/juhanakuparinen.dev/issues"
   }
 }
