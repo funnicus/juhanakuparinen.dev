@@ -24,7 +24,7 @@
     "react-icons": "^3.11.0"
   },
   "devDependencies": {
-    "@graphql-codegen/cli": "^1.17.8",
+    "@graphql-codegen/cli": "^2.0.1",
     "@graphql-codegen/typescript": "^1.17.9",
     "@graphql-codegen/typescript-operations": "^1.17.8",
     "@types/react-helmet": "^6.1.0",
