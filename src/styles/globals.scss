@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Fredoka+One&display=swap');
+
+:root {
+  --dark-red: #811823;
+  --light-red: #f15049;
+  --dark-grey: #2f2f2f;
+  --moto-img: url("../../public/moto_opt.jpg");
+
+  --color-main: #0d0716;
+  --color-complementary: #4e5447;
+  --color-analogous: #342a36;
+  
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+html {
+    font-size: 1.5em;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}

@@ -1,19 +1,18 @@
 import React from "react"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "@/components/Layout"
+import SEO from "@/components/SEO"
 
-import * as notFoundStyles from '../styles/404.module.css'
+import styles from '../styles/404.module.scss'
 
 const NotFoundPage: React.FC = () => (
-  <Layout>
-    <SEO title="404: Not found" />
-    <div className={notFoundStyles.NotFound}>
-      <hgroup className={notFoundStyles.notFound}> 
+    <>
+    <SEO title="404: Not found" /><div className={styles.NotFound}>
+      <header className={styles.notFound}>
         <h1>NOT FOUND</h1>
         <p>You just hit a route that doesn&#39;t exist... the sadness🥺</p>
-      </hgroup> 
+      </header>
     </div>
-  </Layout>
+  </>
 )
 
 export default NotFoundPage
