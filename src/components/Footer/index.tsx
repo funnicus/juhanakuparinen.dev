@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from 'next/image';
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 import styles from './Footer.module.scss'
@@ -30,7 +29,7 @@ const Footer = () => {
           </div>
           <div>
             <article>
-              <h3>Me around the web:</h3>
+              <h3 style={{ fontSize: "1.2em" }}>Me around the web:</h3>
               <div className={styles["icons-container"]}>
                 <a href="https://github.com/funnicus"><FaGithub className={styles.github} /><span>GitHub</span></a>
                 <a href="https://www.linkedin.com/in/juhana-kuparinen-6284b8198/"><FaLinkedin className={styles.linkedin} /><span>LinkedIn</span></a>
