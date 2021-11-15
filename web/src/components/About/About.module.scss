@@ -1,0 +1,42 @@
+@use "../../styles/theme" as t;
+
+.about {
+  background: var(--dark-grey);
+  text-align: center;
+  padding: 20px 20px 30px;
+  color: #fbfbfe;
+
+  h3 {
+    font-size: 1.7em;
+  }
+
+  b {
+    color: #ffbdad;
+  }
+
+  &>article {
+    margin: auto;
+    text-align: left;
+
+    width: var(--section-width);
+
+    &>article {
+      margin-right: 20px;
+    }
+
+    &>span {
+      text-align: center;
+    }
+  }
+}
+
+@include t.breakpoint-sm {
+  .about {
+    flex-direction: column;
+    padding: 5px;
+
+    >article {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.Home {
+  background: var(--color-main) var(--moto-img);
+  background-size: cover;
+  color: white;
+}
+
+.Home > div {
+  min-height: 100vh;
+  width: 40%;
+}
+
+.headerOverlay {
+  background: var(--color-main);
+  padding: 20px;
+  opacity: 0.8;
+  font-family: Archivo Black;
+}
+
+.headerOverlay > div {
+  max-width: 600px;
+}
+
+.headerOverlay a {
+  color: yellow;
+  text-decoration: none;
+}
+
+.headerOverlay header,
+.headerOverlay p {
+  animation: fadeIn 0.8s ease-in both;
+}
+
+.headerOverlay p {
+  animation-delay: 1s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -3%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@media only screen and (max-width: 1250px){
+  .Home > div {
+      width: 100%;
+  }
+
+  .headerOverlay {
+    padding: 5px;
+  }
+}

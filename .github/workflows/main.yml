@@ -12,7 +12,10 @@ on:
 
 jobs:
   main-deploy_pipeline:    
-    runs-on: ubuntu-18.04    
+    runs-on: ubuntu-18.04
+    defaults:
+      run:
+        working-directory: ./web  
     steps:      
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1   
