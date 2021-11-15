@@ -1,0 +1,63 @@
+@use "../../styles/theme" as t;
+
+.footer {
+  background: var(--dark-grey);
+  text-align: center;
+  color: #fbfbfe;
+  padding: 0 0 30px;
+
+  h3 {
+    font-size: 1.7em;
+  }
+
+  b {
+    color: #ffbdad;
+  }
+
+  &>div {
+    padding: 20px;
+    width: var(--section-width);
+    margin: auto;
+    text-align: left;
+    display: flex;
+
+    &>article {
+      margin-right: 20px;
+    }
+
+    &>span {
+      text-align: center;
+    }
+  }
+
+  a, a > span {
+    text-decoration: none;
+    color: #f4c531;
+  }
+}
+
+.icons-container {
+  display: flex;
+  a {
+    display: flex;
+    margin: 0 20px 20px 0;
+    color: #fbfbfe;
+
+    &:hover {
+      cursor: pointer;
+      opacity: .9;
+    }
+    
+    span {
+      margin: 0 10px 0;
+    }
+  }
+}
+
+@include t.breakpoint-sm {
+  .footer > div {
+    flex-direction: column;
+    width: 100%;
+    padding: 5px;
+  }
+}

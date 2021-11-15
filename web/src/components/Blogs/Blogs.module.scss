@@ -1,0 +1,37 @@
+@use "../../styles/theme" as t;
+
+.feed {
+  background: var(--color-analogous);
+  padding: 20px;
+  > section {
+    width: var(--section-width);
+    margin: auto;
+    color: #fff;
+  }
+}
+
+.post {
+  margin: 100px 0 100px;
+  > header > h2, a {
+    @include t.underline;
+  }
+
+  > header > span {
+    color: #ffbdad;
+    font-size: 15px;
+  }
+
+  &:hover {
+    cursor: pointer;
+    opacity: .8;
+  }
+}
+
+@include t.breakpoint-sm {
+  .feed {
+    padding: 5px;
+    > section {
+      width: 100%;
+    }
+  }
+}

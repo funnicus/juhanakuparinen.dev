@@ -1,0 +1,28 @@
+@mixin  underline {
+  text-decoration: underline;
+  text-decoration-thickness: 5px;
+  text-decoration-color: var(--color-highlight);
+}
+
+/*
+ * Breakpoints
+ */
+
+@mixin breakpoint-lg {
+  @media (max-width: 1300px) {
+    @content;
+  }
+}
+
+@mixin breakpoint-sm {
+  @media (max-width: 800px) {
+    @content;
+  }
+}
+
+// custom breakpoint
+@mixin breakpoint-custom($screen) {
+  @media (min-width: $screen+"px") {
+    @content;
+  }
+}

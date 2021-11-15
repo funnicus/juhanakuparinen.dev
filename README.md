@@ -1,26 +1,39 @@
 # Juhana Kuparinen - Developer Website
 
-This is the code for my developer website. It has been build using Gatsby.
-I plan to add Contentful headless CMS and a blog system powered with it to this site in the future...
+This is the code for my developer website. It has been build using Next.js and Keystone 6.
 
-Deployed using Netlify at ***nimipalvelinPäivittynyt ? www.juhanakuparinen.dev : jovial-darwin-243abd.netlify.app***
+Deployed using Netlify at ***www.juhanakuparinen.dev***
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/73252c8f-5102-40a6-8606-611aa06f3269/deploy-status)](https://app.netlify.com/sites/jovial-darwin-243abd/deploys)
 
 ## Developing this site
 
-You need gatsby-cli and node.js
+## In _web/_
 
-### gatsby develop
+### npm run dev
 
-Starts development server at https://localhost:8000
+Starts development server at https://localhost:3000
 
-### gatsby build
+### npm run build
 
 Create production build
 
-### gatsby serve
+### npm start
 
-Serves the production build at https://localhost:9000
+Serves the production build at https://localhost:3000
 
-### See [here](./GATSBY.md) for more info about a Gatsby site
+### See [here](./web/README.md) for more info about a Next.js site
+
+## In _cms/_
+
+### npm run dev
+
+Starts keystone development server at https://localhost:3001 and the GraphQL API at https://localhost:3001/api/graphql
+
+### npm run build
+
+Create production build
+
+### npm start
+
+### See [here](./web/README.md) for more info about a Keystone 6
