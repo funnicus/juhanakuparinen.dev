@@ -24,6 +24,8 @@ jobs:
         run: npm run lint
       - name: npm run build
         run: npm run build
+        env:
+          SESSION_SECRET: ${{ secrets.SESSION_SECRET }}
       - uses: actions/checkout@v2
       - name: Bump version and push tag
         if: ${{ github.event_name == 'push' && !contains(join(github.event.commits.*.message), '#skip') }}

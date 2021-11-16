@@ -13,7 +13,10 @@ const Home = ({ posts }: Props): JSX.Element => {
   console.log(process.env.NODE_ENV);
   return (
     <>
-      <SEO title="Home" description="Juhana Kuparinen | IT Student and Webmaster at Digit ry" />
+      <SEO 
+        title="Juhana Kuparinen | IT Student and Webmaster at Digit ry" 
+        description="Read my blogs and find out other things about me here!" 
+      />
       <Header />
       <Blogs blogs={posts} />
     </>
