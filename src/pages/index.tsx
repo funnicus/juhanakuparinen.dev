@@ -14,7 +14,7 @@ const Home = ({ posts }: Props): JSX.Element => {
   return (
     <>
       <SEO 
-        title="Juhana Kuparinen | IT Student and Webmaster at Digit ry" 
+        title="Juhana Kuparinen | IT Student and Co-Founder at Kvanttori Oy" 
         description="Read my blogs and find out other things about me here!" 
       />
       <Header />
