@@ -1,6 +1,6 @@
-# Main deployment pipeline for juhanakuparinen.dev
+# Main test pipeline for juhanakuparinen.dev
 
-name: Deployment pipeline
+name: Testing pipeline
 
 on:
   push:
@@ -13,9 +13,6 @@ on:
 jobs:
   main-deploy_pipeline:    
     runs-on: ubuntu-18.04
-    defaults:
-      run:
-        working-directory: ./web  
     steps:      
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1   
@@ -27,10 +24,6 @@ jobs:
         run: npm run lint
       - name: npm run build
         run: npm run build
-        env:
-          SPACE_ID: ${{ secrets.SPACE_ID }}
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          PREVIEW_ACCESS_TOKEN: ${{ secrets.PREVIEW_ACCESS_TOKEN }}
       - uses: actions/checkout@v2
       - name: Bump version and push tag
         if: ${{ github.event_name == 'push' && !contains(join(github.event.commits.*.message), '#skip') }}
