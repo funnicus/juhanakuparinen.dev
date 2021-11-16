@@ -6,8 +6,6 @@ Deployed with Vercel at ***www.juhanakuparinen.dev***
 or
 https://juhanakuparinen-dev-cadbgriye-funnicus.vercel.app/
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/73252c8f-5102-40a6-8606-611aa06f3269/deploy-status)](https://app.netlify.com/sites/jovial-darwin-243abd/deploys)
-
 ## Developing this site
 
 ### npm run dev
