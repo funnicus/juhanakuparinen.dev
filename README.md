@@ -8,8 +8,6 @@ Deployed using Netlify at ***www.juhanakuparinen.dev***
 
 ## Developing this site
 
-## In _web/_
-
 ### npm run dev
 
 Starts development server at https://localhost:3000
@@ -22,18 +20,4 @@ Create production build
 
 Serves the production build at https://localhost:3000
 
-### See [here](./web/README.md) for more info about a Next.js site
-
-## In _cms/_
-
-### npm run dev
-
-Starts keystone development server at https://localhost:3001 and the GraphQL API at https://localhost:3001/api/graphql
-
-### npm run build
-
-Create production build
-
-### npm start
-
-### See [here](./web/README.md) for more info about a Keystone 6
+### See [here](./NEXT.md) for more info about a Next.js site
