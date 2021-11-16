@@ -1,6 +1,13 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 /* eslint-disable no-undef */
 /** @type {import('next').NextConfig} */
-module.exports = {
+
+/*module.exports = {
   reactStrictMode: true,
-  target: 'serverless'
-};
+}*/
+
+const { withKeystone } = require('@keystone-next/keystone/next');
+
+module.exports = withKeystone({
+  reactStrictMode: true,
+});

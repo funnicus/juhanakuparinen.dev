@@ -1,4 +1,8 @@
-@mixin  underline {
+/*
+ * Styling
+ */
+
+@mixin underline {
   text-decoration: underline;
   text-decoration-thickness: 5px;
   text-decoration-color: var(--color-highlight);

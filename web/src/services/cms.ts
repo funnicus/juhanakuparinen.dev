@@ -1,10 +1,10 @@
-import { GET_POSTS, GET_ONE_POST } from '@/queries';
-import client from '@/utils/apollo';
-import { Post } from '@/types/cms';
+//import { GET_POSTS, GET_ONE_POST } from '@/queries';
+//import client from '@/utils/apollo';
+//import { Post } from '@/types/cms';
 
 export const getAllBLogs = async () => {
   try {
-    const { data } = await client.query<{ posts: Post[] }>({ query: GET_POSTS });
+    /*const { data } = await client.query<{ posts: Post[] }>({ query: GET_POSTS });
 
     const posts = data.posts
       .filter(post => post.status === 'published')
@@ -13,7 +13,8 @@ export const getAllBLogs = async () => {
         new Date(postB.publishDate).getTime() - new Date(postA.publishDate).getTime()
       ));
 
-    return posts;
+    return posts;*/
+    return [{ id: 'sadsa' }];
 
   } catch (error) {
     return [];
@@ -22,8 +23,9 @@ export const getAllBLogs = async () => {
 
 export const getOneBlog = async (id: string) => {
   try {
-    const { data } = await client.query<{ post: Post | null }>({ query: GET_ONE_POST, variables: { id } });
-    return data.post;
+    //const { data } = await client.query<{ post: Post | null }>({ query: GET_ONE_POST, variables: { id } });
+    //return data.post;
+    return null;
   } catch (error) {
     return null;
   }

@@ -8,9 +8,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@apollo/client": "^3.4.17",
-    "@keystone-next/document-renderer": "^4.0.1",
-    "graphql": "^16.0.1",
+    "@keystone-next/keystone": "^28.0.0",
     "highlight.js": "^11.3.1",
     "next": "12.0.3",
     "react": "17.0.2",
