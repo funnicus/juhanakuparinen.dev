@@ -1,0 +1,26 @@
+@use "../../styles/theme" as t;
+
+.wrapper {
+  background-color: var(--color-complementary);
+  padding: 20px 20px 30px;
+  color: #fff;
+}
+
+.description {
+  width: 60%;
+  margin: auto;
+
+  b {
+    color: var(--color-highlight);
+  }
+
+  a {
+    color: #f4c531;
+  }
+}
+
+@include t.breakpoint-sm {
+  .description {
+    width: 93%;
+  }
+}

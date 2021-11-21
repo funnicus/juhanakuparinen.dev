@@ -6,7 +6,7 @@
 
 .Home > div {
   min-height: 100vh;
-  width: 40%;
+  width: 500px;
 }
 
 .headerOverlay {
@@ -45,7 +45,7 @@
   }
 }
 
-@media only screen and (max-width: 1250px){
+@media only screen and (max-width: 950px){
   .Home > div {
       width: 100%;
   }

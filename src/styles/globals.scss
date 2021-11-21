@@ -14,6 +14,16 @@
   --section-width: 60%;
 
   --link-color: #f4c531;
+
+  --js: #fcdc00;
+  --js-side: #f8e14d;
+  --ts: #3178c6;
+  --ts-side: #6193c9;
+  --react: #61dafb;
+  --react-side: #a1e7fa;
+  --nodejs: #026e00;
+  --nodejs-side: #2e912c;
+  --graphql: #e10098;
 }
 
 html,
@@ -25,7 +35,7 @@ body {
 }
 
 html {
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 a {
