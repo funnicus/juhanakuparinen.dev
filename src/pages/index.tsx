@@ -4,6 +4,7 @@ import Blogs from '@/components/Blogs';
 
 import { getAllBLogs } from '@/services/cms';
 import { Post } from '@/types/cms';
+import Skills from '@/components/Skills';
 
 type Props = {
   posts: Post[]
@@ -19,6 +20,7 @@ const Home = ({ posts }: Props): JSX.Element => {
       />
       <Header />
       <Blogs blogs={posts} />
+      <Skills />
     </>
   );
 };

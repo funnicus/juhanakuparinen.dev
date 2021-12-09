@@ -16,7 +16,7 @@
 
   &>div {
     padding: 20px;
-    width: var(--section-width);
+    max-width: var(--section-width);
     margin: auto;
     text-align: left;
     display: flex;
@@ -57,7 +57,6 @@
 @include t.breakpoint-sm {
   .footer > div {
     flex-direction: column;
-    width: 93%;
     padding: 5px;
   }
 }

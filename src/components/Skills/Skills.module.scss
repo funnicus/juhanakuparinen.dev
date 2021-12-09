@@ -1,0 +1,54 @@
+@use "../../styles/theme" as t;
+
+.wrapper {
+  background-color: var(--color-complementary);
+  padding: 20px 20px 30px;
+  color: #fff;
+
+  > div {
+    display: grid;
+
+    gap: 0.2rem;
+
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+
+    margin: auto;
+    max-width: 1200px;
+
+    h2 {
+      @include t.underline;
+    }
+  }
+}
+
+.selection {
+  > button {
+    border: none;
+    background: none;
+
+    font-size: 20px;
+
+    color: var(--color-highlight);
+
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
+}
+
+.description {
+
+  > ul {
+    list-style: none;
+    border-left: 1px solid #fff;
+  }
+
+  b, h5 {
+    color: var(--color-highlight);
+  }
+
+  a {
+    color: #f4c531;
+  }
+}

@@ -1,46 +1,54 @@
-.tiles {
-    font-family: sans-serif;
-    display: grid;
+  .Tiles {
+    margin: auto;
+    max-width: 800px;
+  }
 
-    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  .tiles {
+    --tile-height: 400;
+    --tile-width: 300;
+
+    font-family: sans-serif;
 
     margin: 0;
     padding: 0;
-    transform: scale(0.6);  
   }
   
-  .tiles li {
+  .tile {
     list-style: none;
-    margin: 40px;
+    margin: 40px 10px 40px;
     width: 10%;
-    animation: fadeIn .8s ease-in both; 
+    animation: fadeIn .8s ease-in both;
   }
   
-  .tiles li a .fab {
-    font-size: 60px;
+  .tile a .fab {
+    font-size: 30px;
+
     color: #fff;
-    line-height:80px;
+    line-height: 80px;
     transition: .5s;
     padding-right: 14px;
     padding-top: 16px;
   }
   
-  .tiles li a span {
+  .tile a span {
     padding:0;
     margin:0;
     position: absolute;
-    top: 30px;
+
+    top: 16px;
+    font-size: 10px;
+
     color: #fff;
     letter-spacing: 4px;
     transition: .5s;
   }
   
-  .tiles li a {
+  .tile a {
     text-decoration: none;
     display: absolute;
     display: block;
-    width:210px;
-    height:80px;
+    max-width: 800px;
+    height: 40px;
     text-align: left;
     padding-left: 20px;
     transform: rotate(0deg);
@@ -48,7 +56,7 @@
     box-shadow: -20px 20px 10px rgba(0,0,0,.5);
   }
   
-  .tiles li a:before {
+  .tile a:before {
     content: '';
     position: absolute;
     top: 5px;
@@ -60,7 +68,7 @@
     transform: rotate(0deg) skewY(-45deg);
   }
   
-  .tiles li a:after {
+  .tile a:after {
     content: '';
     position: absolute;
     bottom: -10px;
@@ -72,80 +80,87 @@
     transform: rotate(0deg) skewX(-45deg);
   }
 
-  .tiles li a:hover {
+  .tile a:hover {
     transform: rotate(0deg) skew(0deg) translate(10px,-5px);
     box-shadow: -50px 50px 50px rgba(0,0,0,.5);
   }
   
-  .tiles li:nth-child(1) a{
+  .js a {
     background: var(--js);
-    width: 300px;
+    width: 380px;
   }
-  .tiles li:nth-child(1) a:before{
+  .js a:before{
     background: #af9800;
   }
   
-  .tiles li:nth-child(1) a:after{
+  .js a:after{
     background: var(--js-side);
   }
   
-  .tiles li:nth-child(2) a{
+  .react a{
     background: var(--react);
-    width: 300px;
+    width: 400px;
   }
   
-  .tiles li:nth-child(2) a:before{
+  .react a:before{
     background: #4292a8;
   }
   
-  .tiles li:nth-child(2) a:after{
+  .react a:after{
     background: var(--react-side);
   }
   
-  .tiles li:nth-child(3) a{
+  .node a{
     background: var(--nodejs);
-    width: 300px;
+    width: 380px;
   }
   
-  .tiles li:nth-child(3) a:before{
+  .node a:before{
     background: #015000;
   }
   
-  .tiles li:nth-child(3) a:after{
+  .node a:after{
     background: var(--nodejs-side);
   }
 
-  .tiles li:nth-child(4) a{
+  .ts a{
     background: var(--ts);
-    width: 300px;
+    width: 400px;
   }
   
-  .tiles li:nth-child(4) a:before{
+  .ts a:before{
     background: #27609c;
   }
   
-  .tiles li:nth-child(4) a:after{
+  .ts a:after{
     background: var(--ts-side);
   }
 
-  .tiles li:nth-child(5) a{
+  .graphql a{
     background: var(--graphql);
-    width: 300px;
+    width: 250px;
   }
   
-  .tiles li:nth-child(5) a:before{
+  .graphql a:before{
     background: #960066;
   }
   
-  .tiles li:nth-child(5) a:after{
+  .graphql a:after{
     background: #e73db1;
   }
 
-  @media only screen and (max-width: 850px){
-    .Tiles {
-      width: initial;
-    }
-}
+  .mongodb a{
+    background: #023430;
+    width: 300px;
+  }
+  
+  .mongodb a:before{
+    background: #012724;
+  }
+  
+  .mongodb a:after{
+    background: #034d46;
+  }
 
 @keyframes fadeIn {
   from {

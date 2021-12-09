@@ -13,7 +13,6 @@ const Footer = () => {
             <a href="https://github.com/funnicus"><FaGithub className={styles.github} /><span>GitHub</span></a>
             <a href="https://www.linkedin.com/in/juhana-kuparinen-6284b8198/"><FaLinkedin className={styles.linkedin} /><span>LinkedIn</span></a>
             <a href="https://rateyourmusic.com/~fennicus">♫<span> Rate Your Music</span></a>
-            <a href="https://myanimelist.net/animelist/Fennicus"><span>⛩ My Anime List</span></a>
           </div>
         </article>
       </div>
