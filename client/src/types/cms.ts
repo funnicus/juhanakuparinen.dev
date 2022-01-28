@@ -1,6 +1,6 @@
 type Tag = {
   name: string;
-}
+};
 
 export type Post = {
   title: string;
@@ -11,4 +11,8 @@ export type Post = {
   status: 'published' | 'draft';
   tags: Tag[];
   content: any;
-}
+};
+
+export type ApolloResult<T> = {
+  data: T;
+};

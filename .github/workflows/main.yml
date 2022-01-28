@@ -6,21 +6,24 @@ on:
   push:
     branches:
       - master
-  pull_request:    
+  pull_request:
     branches: [master]
     types: [opened, synchronize]
 
 jobs:
-  main-deploy_pipeline:    
+  main-deploy_pipeline:
     runs-on: ubuntu-18.04
-    steps:      
+    defaults:
+      run:
+        working-directory: ./client
+    steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1   
-        with:          
-          node-version: '14.x'
-      - name: npm install        
+      - uses: actions/setup-node@v1
+        with:
+          node-version: "14.x"
+      - name: npm install
         run: npm install
-      - name: lint        
+      - name: lint
         run: npm run lint
       - name: npm run build
         run: npm run build

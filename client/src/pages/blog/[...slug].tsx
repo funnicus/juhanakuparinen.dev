@@ -2,7 +2,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { GetStaticPaths, GetStaticProps } from 'next';
-import { DocumentRenderer } from '@keystone-next/document-renderer';
+import { DocumentRenderer } from '@keystone-6/document-renderer';
 
 import SEO from '@/components/SEO';
 
@@ -13,26 +13,27 @@ import renderers from '@/utils/renderers';
 import styles from './Article.module.scss';
 import 'highlight.js/styles/atom-one-dark.css';
 
-type Path = { 
-  params: { 
-    slug: string 
-  } 
-}
+type Path = {
+  params: {
+    slug: string;
+  };
+};
 
 type Props = {
   post: Post;
-}
+};
 
 const Article = ({ post }: Props) => {
-
   const { document } = post.content;
 
   return (
     <>
-      <SEO title={post.title} description={post.excerpt}/>
+      <SEO title={post.title} description={post.excerpt} />
       <div className={styles.wrapper}>
         <article>
-          <Link href="/"><a className={styles.back}>Go back</a></Link>
+          <Link href="/">
+            <a className={styles.back}>Go back</a>
+          </Link>
           <header>
             <h1>{post.title}</h1>
             <p>{post.excerpt}</p>
@@ -45,7 +46,6 @@ const Article = ({ post }: Props) => {
 };
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-
   const id = params?.slug ?? '';
   // id can be an array
   const post = await getOneBlog(Array.isArray(id) ? id[0] : id);
@@ -60,7 +60,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     props: {
       post,
     },
-    revalidate: 30
+    revalidate: 30,
   };
 };
 
@@ -68,7 +68,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   const posts = await getAllBLogs();
 
   const paths: Path[] = [];
-  paths.concat(posts.map(post => ({ params: { slug: post.slug } })) ?? []);
+  paths.concat(posts.map((post) => ({ params: { slug: post.slug } })) ?? []);
 
   return {
     paths,

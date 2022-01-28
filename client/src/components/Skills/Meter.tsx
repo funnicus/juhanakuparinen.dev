@@ -110,7 +110,7 @@ const Meter = ({ logo }: Props) => {
       <div className={styles.metric}>
         <span><SiExpress /> - Express</span>
         <div className={styles.meter}>
-          <div style={{ background: '#000', borderRadius: '20px', width: '90%', height: '10px' }}>
+          <div style={{ background: '#000', borderRadius: '20px', width: '85%', height: '10px' }}>
 
           </div>
         </div>

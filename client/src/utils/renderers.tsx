@@ -1,7 +1,7 @@
-import { DocumentRendererProps } from '@keystone-next/document-renderer';
+import { DocumentRendererProps } from '@keystone-6/document-renderer';
 import Highlight from 'react-highlight';
 
-import styles from './renderer.module.scss'
+import styles from './renderer.module.scss';
 
 const renderers: DocumentRendererProps['renderers'] = {
   // use your editor's autocomplete to see what other renderers you can override
@@ -10,8 +10,12 @@ const renderers: DocumentRendererProps['renderers'] = {
       return <strong className={styles.bolded}>{children}</strong>;
     },
     link: ({ children, href }) => {
-      return <a href={href} style={{ color: '#f4c531' }}>{children}</a>;
-    }
+      return (
+        <a href={href} style={{ color: '#f4c531' }}>
+          {children}
+        </a>
+      );
+    },
   },
   block: {
     paragraph: ({ children, textAlign }) => {
@@ -20,9 +24,7 @@ const renderers: DocumentRendererProps['renderers'] = {
     code: ({ children }) => {
       return (
         <div className="code-block">
-          <Highlight>
-            {children}
-          </Highlight>
+          <Highlight>{children}</Highlight>
         </div>
       );
     },
